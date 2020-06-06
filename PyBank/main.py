@@ -73,16 +73,19 @@ with open(csvpath) as csvfile:
             great_decrease_date = row[0]
 
 # Prints the analysis to the terminal
-print(f'Financial Analysis\n----------------------------\nTotal Months: {total_months}\nTotal: ${total_profit_losses}')
-print('Average Change: $'+'{:08.2f}'.format(average(num_profit_losses)))
-print(f'Greatest Increase in Profits: {great_increase_date} (${great_increase})\nGreatest Decrease in Profits: {great_decrease_date} (${great_decrease})')
+print(f'Financial Analysis\n----------------------------\nTotal Months: {total_months}')
+print(f'Total: ${total_profit_losses}')
+print('Average Change: $'+'{:.2f}'.format(average(num_profit_losses)))
+print(f'Greatest Increase in Profits: {great_increase_date} (${great_increase})')
+print(f'Greatest Decrease in Profits: {great_decrease_date} (${great_decrease})')
 
 # Set variable for output file
 filename = os.path.join("analysis", "financial_analysis.txt")
 
 # Exports a text file with the results  
 with open(filename, "w") as datafile:
-    print(f"Financial Analysis\n----------------------------\nTotal Months: {total_months}\nTotal: ${total_profit_losses}", file=datafile)
-    print("Average Change: $" + '{:08.2f}'.format(average(num_profit_losses)), file=datafile)
-    print(f"Greatest Increase in Profits: {great_increase_date} (${great_increase})\nGreatest Decrease in Profits: {great_decrease_date} (${great_decrease})", file=datafile)
-
+    print(f'Financial Analysis\n----------------------------\nTotal Months: {total_months}', file=datafile)
+    print(f'Total: ${total_profit_losses}', file=datafile)
+    print('Average Change: $'+'{:.2f}'.format(average(num_profit_losses)), file=datafile)
+    print(f'Greatest Increase in Profits: {great_increase_date} (${great_increase})', file=datafile)
+    print(f'Greatest Decrease in Profits: {great_decrease_date} (${great_decrease})', file=datafile)
