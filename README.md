@@ -12,7 +12,7 @@ https://stackoverflow.com/questions/36571560/directing-print-output-to-a-txt-fil
 https://pyformat.info/
 
 
-In the PyPoll challenge, I wrote a python script that analyzes the votes and calculates:
+In the PyPoll challenge, I wrote a python script to analyze the votes and calculate:
 the total number of votes cast, a complete list of candidates who received votes, the percentage of votes each candidate won, the total number of votes each candidate won, and the winner of the election based on popular vote.
 
 Additional Resources I used:
