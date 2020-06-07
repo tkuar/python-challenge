@@ -22,3 +22,11 @@ https://www.geeksforgeeks.org/python-program-to-find-largest-number-in-a-list/
 https://stackoverflow.com/questions/45635242/how-to-get-the-key-from-value-in-a-dictionary-in-python
 https://stackoverflow.com/questions/5904969/how-to-print-a-dictionarys-key
 
+In the PyBoss challenge, I wrote a python script to convert the employee records to be in the following format where:
+the Name column is split into separate First Name and Last Name columns, the DOB data is re-written into MM/DD/YYYY format, the SSN data is re-written so the first five numbers are hidden from view, and the State data is re-written as simple two-letter abbreviations.
+
+
+Additional Resources I used:
+https://gist.github.com/afhaque/29f0f4f37463c447770517a6c17d08f5
+https://www.quora.com/How-do-I-rearrange-nested-lists-in-Python-so-that-the-order-of-the-sub-lists-does-not-change-but-the-order-of-the-items-within-the-sub-lists-does
+https://stackoverflow.com/questions/41925504/how-to-join-every-sublist-to-a-single-string-in-python
