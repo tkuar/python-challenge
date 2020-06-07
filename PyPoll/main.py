@@ -34,10 +34,12 @@ with open(csvpath) as csvfile:
 # Calculates the total number of votes cast
 total_votes = len(voter)
 
+# ----------------------------------------------------------------------
 # Code that was used to get the all of the unique candidates
 #    unique_candidate = list(set(candidate))
 #    print(unique_candidate)
 # ['Khan', 'Li', "O'Tooley", 'Correy'] all of the candidates
+# ----------------------------------------------------------------------
 
 # Counts the total number of votes each candidate won
 khan_votes = candidate.count("Khan")
@@ -68,6 +70,7 @@ popular_candidate = [key for key,values in total_candidate_vote.items() if value
 # Prints the results to the terminal
 print("Election Results\n-------------------------")
 print(f"Total Votes: {total_votes}\n-------------------------")
+# Loop to print out candidates results
 for key,values in total_candidate_vote.items():
     print(key + ": " + "{:.3%}".format(values[0]) + " (" + str(values[1]) + ")")
 print(f"-------------------------\nWinner: {popular_candidate[0]}\n-------------------------")
@@ -79,6 +82,7 @@ output_file = os.path.join("analysis", "election_results.txt")
 with open(output_file, "w") as datafile:
     print("Election Results\n-------------------------", file=datafile)
     print(f"Total Votes: {total_votes}\n-------------------------", file=datafile)
+    # Loop to print out candidates results
     for key,values in total_candidate_vote.items():
         print(key + ": " + "{:.3%}".format(values[0]) + " (" + str(values[1]) + ")", file=datafile)
     print(f"-------------------------\nWinner: {popular_candidate[0]}\n-------------------------", file=datafile)

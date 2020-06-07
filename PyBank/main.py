@@ -22,12 +22,13 @@ def average(num):
     
     return (sum(num)/length)
 
-# Open budget_data.csv
+# Open and read budget_data.csv
 with open(csvpath) as csvfile:
 
     csvreader = csv.reader(csvfile, delimiter=",")
     csvheader = next(csvfile)
 
+    # Loop to fill the lists with data
     for row in csvreader:
         
         month.append(row[0])
