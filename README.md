@@ -1,6 +1,6 @@
 # python-challenge
 
-*Note: the path in each python script is written with the assumption the csv file is in the Resources directory while the script is in the PyBank/PyPoll directories*
+*Note: the path in each python script is written with the assumption the csv file is in the Resources directory while the script is in the PyBank/PyPoll/PyBoss directories*
 
 In the PyBank challenge, I wrote a python script to analyze the records in order to calculate: 
 the total number of months included in the dataset, the net total amount of "Profit/Losses" over the entire period, the average of the changes in "Profit/Losses" over the entire period, the greatest increase in profits (date and amount) over the entire period, and the greatest decrease in losses (date and amount) over the entire period
